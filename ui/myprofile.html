@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heat or not</title>
+    <link rel="stylesheet" href="css/structure.css" />
+    <link rel="stylesheet" href="css/myprofile.css" />
+    <script
+      src="https://kit.fontawesome.com/c02d3fc986.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <script src="js/env.js" defer></script>
+    <script src="js/rotateImg.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-container">
+          <h1><strong>Heat</strong> or not</h1>
+        </div>
+        <hr />
+      </header>
+      <main>
+        <div class="main-container">
+          <div class="content">
+            <div class="userinfo">
+              <div id="name">
+                <h2 id="nimi"></h2>
+                <h2 id="email"></h2>
+              </div>
+            </div>
+            <div id="profile">
+              <img
+                id="pic"
+                onerror="this.onerror=null;this.src='images/car2.jpeg';"
+                alt="img"
+              />
+            </div>
+          </div>
+          <hr />
+          <h2 id="submitCar">Submit your Car</h2>
+
+          <div class="carupload">
+            <form
+              action="http://localhost:3000/car"
+              method="post"
+              enctype="multipart/form-data"
+              id="carSubmit"
+            >
+              <label for="Brand">Choose a car:</label>
+              <select name="Brand" id="Brand">
+                <option value="volvo">Volvo</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+                <option value="bmw">BMW</option>
+                <option value="ford">Ford</option>
+                <option value="nissan">Nissan</option>
+                <option value="opel">Opel</option>
+                <option value="skoda">Skoda</option>
+                <option value="peugeot">Peugeot</option>
+                <option value="polestar">Polestar</option>
+                <option value="renault">Renault</option>
+                <option value="subaru">Subaru</option>
+                <option value="tesla">Tesla</option>
+                <option value="porsche">Porsche</option>
+                <option value="suzuki">Suzuki</option>
+              </select>
+              <input type="text" name="Model" placeholder="Model" />
+              <hr />
+              <label>
+                <textarea
+                  rows="4"
+                  cols="50"
+                  name="Description"
+                  placeholder="Description"
+                ></textarea>
+              </label>
+
+              <input
+                class="test"
+                type="text"
+                name="UserID"
+                id="UserID"
+                placeholder="Your text"
+              />
+              <input
+                type="file"
+                name="car"
+                accept="image/*"
+                placeholder="Choose file"
+              />
+              <input type="hidden" name="redirectToProfile" value="true" />
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </main>
+      <nav class="nav-bar">
+        <ul class="nav-bar-list">
+          <li class="nav-element">
+            <a href="./front"><i class="fa-solid fa-house-chimney"></i></a>
+          </li>
+          <li class="nav-element">
+            <a href="./ranking"><i class="fa-solid fa-star"></i></a>
+          </li>
+          <li class="nav-element">
+            <a href="./myprofile"
+              ><i
+                style="
+                  color: #ff0000a1;
+                  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+                "
+                class="fa-solid fa-user"
+              ></i
+            ></a>
+          </li>
+          <li class="nav-element">
+            <a href="./auth/logout"
+              ><i class="fa-solid fa-right-from-bracket"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script src="js/profile.js" defer></script>
+  </body>
+</html>

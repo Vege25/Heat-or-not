@@ -1,0 +1,135 @@
+main {
+  overflow: auto;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+
+.main-container {
+  max-width: 800px;
+  margin: auto;
+}
+option,
+input,
+textarea,
+select:active {
+  outline-color: #e9190f;
+}
+input,
+textarea,
+select {
+  border-radius: 10px;
+  padding: 0.5em;
+}
+button {
+  border-radius: 10px;
+  border-width: 1.5px;
+  padding: 0.5em;
+}
+.model-input {
+  border-width: 1.5px;
+  border-style: solid;
+}
+.first-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.group2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#pic {
+  max-width: 100%;
+  max-height: 450px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.5);
+}
+
+#profile {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userinfo {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+}
+#nimi {
+  font-size: 1.8em;
+  margin-bottom: 0;
+}
+#email {
+  font-size: 1em;
+}
+
+#submitCar {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+}
+.carForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carupload {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+}
+
+#login_button {
+  width: 30%;
+  padding: 10px 0;
+  margin: 10px auto;
+  border-radius: 5px;
+  border: none;
+  background: #bea6a0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+#login_button:hover {
+  background: #d06479;
+}
+#carSubmit,
+#submitCar {
+  display: none;
+}
+@media only screen and (min-width: 800px) {
+  .main-container {
+    width: 800px;
+    margin: auto;
+  }
+  .carupload {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #myFile {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .userinfo {
+    margin-bottom: 20px;
+  }
+}
+
+.test {
+  background-color: red;
+  display: none;
+}

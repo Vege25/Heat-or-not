@@ -1,0 +1,108 @@
+@font-face {
+  font-family: raceFont;
+  src: url("../fonts/FjallaOne-Regular.ttf");
+}
+@font-face {
+  font-family: defaultFont;
+  src: url("../fonts/NanumGothic-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #f2f2f2;
+  font-family: defaultFont, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  flex: 0 0 0;
+  background-color: white;
+  height: 60px;
+  text-align: center;
+  width: 100%;
+}
+.header-container {
+  padding: 10px 0;
+}
+.header-container h1 {
+  font-family: raceFont, sans-serif;
+  margin: 0;
+  font-size: 1.8em;
+}
+.header-container strong {
+  color: #e9190f;
+}
+header hr {
+  margin: 0;
+  padding: 0;
+  border: 0.13em solid #e9190f;
+  border-radius: 10px;
+  width: 100%;
+}
+
+
+main {
+  flex: 1 1 0;
+  overflow-y: scroll;
+}
+
+main p {
+  margin: 0;
+}
+
+nav {
+  flex: 0 0 0;
+  width: 100%;
+}
+.nav-bar-list {
+  margin: auto;
+  max-width: 800px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  background-color: white;
+  box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.5);
+}
+.nav-element {
+  flex: 1;
+  min-height: 60px;
+}
+.nav-element a {
+  width: 100%;
+  height: 60px;
+  text-decoration: none;
+  color: #56423d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-element a:hover {
+  color: #bea6a0;
+}
+.nav-element i {
+  font-size: 1.7em;
+}
+@media only screen and (min-width: 800px) {
+  .content {
+    max-width: 800px;
+    margin: auto;
+  }
+  .nav-bar-list {
+    width: 800px;
+    margin: auto;
+  }
+  .nav-bar-list {
+    width: 800px;
+    margin: auto;
+  }
+}

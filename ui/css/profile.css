@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.profile_container {
+  position: relative;
+  margin: 1rem auto auto;
+  display: flex;
+  width: 800px;
+  height: 96%;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px,
+    rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+  background: #ebebeb;
+  flex-direction: column;
+  align-items: center;
+  border-style: groove;
+  border-width: 1px;
+
+  overflow: scroll;
+}
+
+img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  position: relative;
+}
+
+.car_pictures {
+  background-color: #56423d;
+}
+
+label {
+  font-weight: 600;
+  padding-left: 5px;
+  color: #646464;
+  font-size: 1.6rem;
+  line-height: 1.875;
+}
+
+.info_container {
+}
+
+#description {
+  display: flex;
+  width: 500px;
+  height: 207px;
+}
+
+textarea {
+  border: solid 1px #ccc;
+}
+
+#description_title {
+  float: left;
+  width: 120px;
+}
+
+/*
+
+
+
+
+.content {
+    display: flex;
+}
+
+#pic {
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    border-radius: 15%;
+
+}
+
+#submitCar {
+    text-align: center;
+}
+
+
+.carupload {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+#login_button {
+    width: 30%;
+    padding: 10px 0;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: none;
+    background: #BEA6A0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+#login_button:hover {
+    background: #d06479;
+}
+
+@media only screen and (min-width: 800px) {
+    #pic {
+        vertical-align: middle;
+        width: 50%;
+        height: auto;
+        border-radius: 15%;
+    }
+
+    .carupload {
+        margin: auto;
+        width: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    #myFile {
+        margin: auto;
+        width: 100%;
+        padding: 10px;
+    }
+}*/

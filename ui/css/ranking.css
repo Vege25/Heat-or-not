@@ -1,0 +1,175 @@
+* {
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+#title {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.list_container {
+  margin: auto;
+  max-width: 800px;
+  /*
+    position: relative;
+
+    height: 85%;
+    box-shadow: 1px 2px 5px rgb(0 0 0 / 31%);
+    background: #ebebeb;
+    overflow: scroll;
+    */
+}
+
+.profile-pic {
+  height: 75px;
+  width: 75px;
+  z-index: 2;
+  border-radius: 50%;
+  object-fit: cover;
+  border-width: 4px;
+  border-color: rgba(0, 0, 0, 0.52);
+  border-style: solid;
+}
+
+li {
+  list-style: none;
+}
+
+.list {
+  padding: 1rem;
+}
+
+.line {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.line:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+/* == Car Section == */
+
+.car {
+}
+
+.name {
+  font-size: 1rem;
+  color: black;
+}
+
+.username {
+  font-size: 1rem;
+  color: rgba(162, 162, 162);
+}
+
+/* == Likes Section == */
+
+.likes {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.fa-fire {
+  font-size: 1.65em;
+  color: #e9190f;
+}
+
+.likes-value {
+  font-weight: bold;
+}
+
+/* == Profile Section == */
+
+.profile img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #56423d;
+  color: white;
+  text-align: center;
+  border: none;
+  width: 6rem;
+  height: 1.5rem;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+a.btn:hover {
+  background-color: rgba(86, 66, 61, 0.66);
+  box-shadow: rgb(255, 0, 0) 0px 5px, rgb(86, 66, 61) 0px 10px,
+    rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px,
+    rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+@media only screen and (max-width: 800px) {
+  .home {
+    display: none;
+  }
+
+  .likes {
+    align-self: baseline;
+  }
+
+  .profile img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .user .details {
+    margin-left: 0rem;
+  }
+
+  .line {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+}
+
+@media only screen and (max-width: 472px) {
+  .name {
+    font-size: 0.8rem;
+  }
+
+  .user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    width: 4rem;
+    height: 2.5rem;
+  }
+}

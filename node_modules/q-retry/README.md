@@ -1,0 +1,1 @@
+﻿check [github](https://github.com/vilic/q-retry) for documentation.

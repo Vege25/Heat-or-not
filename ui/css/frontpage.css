@@ -1,0 +1,238 @@
+/*tää*/
+@font-face {
+  font-family: raceFont;
+  src: url("../fonts/FjallaOne-Regular.ttf");
+}
+.content {
+  height: 100%;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.5);
+}
+/*---car card-----------------------------------------------*/
+.swipe {
+  height: 100%;
+  width: 100%;
+}
+.car-image {
+  position: absolute;
+  object-fit: contain;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  /*background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+}
+.card1 {
+  transition: 1s;
+  z-index: 1;
+  /* border-radius: 15px; */
+}
+/* .card1:hover {
+  transform: translateX(50px);
+} */
+.moveCardRight {
+  transform: translateX(50px);
+}
+.moveCardLeft {
+  transform: translateX(-50px);
+}
+.card2 {
+  transition: 1s;
+}
+.card2.behind {
+  filter: blur(100px);
+  -webkit-filter: blur(2px);
+}
+.backMessage {
+  position: absolute;
+  white-space: nowrap;
+  font-family: raceFont, sans-serif;
+  z-index: -1;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  left: 0;
+  right: 0;
+  top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+/*---Rating car-----------------------------------------------*/
+.rate {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  height: 75px;
+  z-index: 3;
+}
+.liked {
+  transform: translateX(120vw) rotate(30deg);
+  opacity: 0;
+}
+.disliked {
+  transform: translateX(-120vw) rotate(-30deg);
+  opacity: 0;
+}
+.car-button {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background-color: white;
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.52);
+  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.52);
+}
+.car-button:checked,
+.car-button:active {
+  background-color: #bea6a0;
+}
+.car-button i {
+  font-size: 2.25em;
+}
+.button-container {
+  position: relative;
+  width: 100%;
+  height: 75px;
+}
+#dislikeButton {
+  position: absolute;
+  left: 50px;
+  color: #56423d;
+}
+#likeButton {
+  position: absolute;
+  right: 50px;
+  color: #e9190f;
+}
+.hovers {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.left-hover {
+  position: absolute;
+  width: 20%;
+  height: 70%;
+  top: 15%;
+  left: 0;
+  transition: 0.5s;
+  border-top-right-radius: 500px;
+  border-bottom-right-radius: 500px;
+}
+.left-hovering {
+  background-color: rgba(86, 66, 61, 0.4);
+}
+.right-hover {
+  position: absolute;
+  width: 20%;
+  height: 70%;
+  top: 15%;
+  right: 0;
+  transition: 0.5s;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+.right-hovering {
+  background-color: rgba(233, 25, 15, 0.4);
+}
+/*---Info-----------------------------------------------*/
+.info {
+  width: 100%;
+}
+.link {
+  position: relative;
+  width: 100%;
+  height: 75px;
+}
+.profile-pic {
+  height: 75px;
+  width: 75px;
+  z-index: 3;
+  border-radius: 50%;
+  object-fit: cover;
+  border-width: 4px;
+  border-color: rgba(0, 0, 0, 0.52);
+  border-style: solid;
+}
+.profile-content {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  z-index: 3;
+  width: 100%;
+  /* display: flex; */
+  /* align-items: center; */
+}
+.profile-name {
+  margin: 0;
+  width: 100%;
+  font-size: 1.9em;
+  font-weight: 100;
+  font-family: raceFont, sans-serif;
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-text-stroke: 0.04em black;
+  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; */
+}
+.profile-desc {
+  margin: 0;
+  margin-top: 10px;
+  padding: 10px;
+  color: white;
+  background-color: #56423d;
+  background: rgba(86, 66, 61, 0.6);
+  border-radius: 15px;
+  width: 300px;
+}
+.visible {
+  transition: 0.5s;
+  opacity: 1;
+}
+.hidden {
+  transition: 1s;
+  opacity: 0;
+}
+@media only screen and (max-width: 360px) {
+  #likeButton {
+    right: 20px;
+  }
+  #dislikeButton {
+    left: 20px;
+  }
+  .profile-desc {
+    width: 200px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #likeButton {
+    right: 100px;
+  }
+  #dislikeButton {
+    left: 100px;
+  }
+  .profile-desc {
+    width: 400px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  #likeButton {
+    right: 150px;
+  }
+  #dislikeButton {
+    left: 150px;
+  }
+  .profile-desc {
+    width: 400px;
+  }
+}

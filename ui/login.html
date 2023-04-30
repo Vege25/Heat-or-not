@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heat or not</title>
+    <link rel="stylesheet" href="css/structure.css" />
+    <link rel="stylesheet" href="css/logreg.css" />
+    <script
+      src="https://kit.fontawesome.com/c02d3fc986.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-container">
+          <h1><strong>Heat</strong> or not</h1>
+        </div>
+        <hr />
+      </header>
+      <main>
+        <div class="content">
+          <h1>Login Page</h1>
+          <form action="./auth/login" method="POST">
+            <hr />
+            <label id="user_icon" class="fas fa-user"></label>
+            <label>
+              <input
+                type="email"
+                id="email"
+                aria-describedby="emailHelp"
+                name="email"
+                placeholder="E-Mail"
+              />
+            </label>
+
+            <label id="pass_icon" class="fa-solid fa-key"></label>
+            <label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+              />
+            </label>
+
+            <hr />
+            <button id="login_button" type="submit">Login</button>
+
+            <!-- <div class="alert">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+          <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+        </div>-->
+
+            <p><a href="./register">Create Account</a></p>
+          </form>
+        </div>
+      </main>
+    </div>
+    <div class="footer"></div>
+  </body>
+</html>
