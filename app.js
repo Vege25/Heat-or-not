@@ -4,11 +4,12 @@ const cors = require("cors");
 const mysql = require("mysql2");
 const cookieParser = require("cookie-parser");
 const { httpError } = require("./utils/errors");
+const mongoose = require("mongoose");
 
-const authRoute = require("./routes/authRoute")
+const authRoute = require("./routes/authRoute");
 const carRoute = require("./routes/carRoute");
 const likeRoute = require("./routes/likeRoute");
-const pagesRoute = require("./routes/pagesRoute")
+const pagesRoute = require("./routes/pagesRoute");
 const userRoute = require("./routes/userRoute");
 
 const db = mysql.createConnection({
@@ -18,13 +19,14 @@ const db = mysql.createConnection({
   database: process.env.DB_NAME,
 });
 
-db.connect((err) => {
+/*db.connect((err) => {
   if (err) {
     console.log(err);
   } else {
     console.log("MYSQL CONNECTED");
   }
-});
+});*/
+mongoose.connect("mongodb://localhost/heat-or-not");
 
 const port = 3000;
 
@@ -40,7 +42,7 @@ app.set("view engine", "html");
 
 // Define Routes
 app.use("/", pagesRoute);
-app.use("/auth",authRoute);
+app.use("/auth", authRoute);
 app.use("/car", carRoute);
 app.use("/like", likeRoute);
 app.use("/user", userRoute);
