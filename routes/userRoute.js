@@ -2,9 +2,9 @@
 const express = require("express");
 
 const {
-    getCarOwner,
-    getLoggedInUserInfo,
-    getUserInfo,
+  getCarOwner,
+  getLoggedInUserInfo,
+  getUserInfo,
 } = require("../controllers/userController");
 
 const router = express.Router();

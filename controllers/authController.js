@@ -21,6 +21,7 @@ exports.login = async (req, res) => {
       async (err, results) => {
         console.log(results);
         let sqlResult = JSON.stringify(results);
+        console.log(sqlResult);
         if (!sqlResult.includes("email")) {
           return res.redirect("../login");
         }
@@ -94,8 +95,8 @@ exports.register = (req, res) => {
           if (err) {
             console.log(err);
           } else {
-              console.log("User succesfully created");
-              res.redirect("../login");
+            console.log("User succesfully created");
+            res.redirect("../login");
           }
         }
       );
