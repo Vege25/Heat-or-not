@@ -30,7 +30,11 @@ Users can swipe right to like heated cars or swipe left to skip not heated cars.
 
 ## Screenshots
 <img width="1680" alt="Screenshot 2024-01-08 at 13 59 24" src="https://github.com/Vege25/Heat-or-not/assets/64736229/58aaa12f-7dd0-4872-824e-236170051efb">
+
 ## Demo Video
+
+https://github.com/Vege25/Heat-or-not/assets/64736229/a370bc2e-5f4c-472c-8961-c0e68b715288
+
 
 
 ## Getting Started
