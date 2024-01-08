@@ -9,6 +9,8 @@ Users can swipe right to like heated cars or swipe left to skip not heated cars.
 
 - **Swipe Functionality:** Swipe right or left to express preferences for heated or not heated cars.
   
+- **Leaderboards:** Check who has the most heated car from leaderboards.
+  
 - **User Authentication:** Secure login to track liked and skipped cars.
 
 - **Database Integration:** MariaDB stores and retrieves car data for a dynamic user experience.
