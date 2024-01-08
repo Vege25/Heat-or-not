@@ -2,7 +2,8 @@
 
 ## Overview
 
-Heat or Not is a full-stack web application inspired by the popular "swipe right" and "swipe left" interaction found in dating apps. Users can swipe right to like heated cars or swipe left to skip not heated cars. The app uses HTML, CSS, JavaScript, Express, and MariaDB to create an engaging experience.
+Heat or Not is a full-stack web application inspired by the popular "swipe right" and "swipe left" interaction found in dating apps. 
+Users can swipe right to like heated cars or swipe left to skip not heated cars.
 
 ## Features
 
